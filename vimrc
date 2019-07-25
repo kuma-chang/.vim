@@ -37,6 +37,9 @@ Plugin 'scrooloose/nerdtree'
 " Plugin for Auto-pairs
 Plugin 'jiangmiao/auto-pairs'
 
+" Plugin for Solarized 8
+Plugin 'lifepillar/vim-solarized8'
+
 
 
 
@@ -59,7 +62,7 @@ filetype plugin indent on    " required
 
 set ai
 
-set t_Co=256
+set t_Co=16
 
 "settings for powerline
 set nocompatible
@@ -80,6 +83,7 @@ set softtabstop=4
 set number
 set showcmd
 set cursorline
+set cursorcolumn
 filetype indent on
 set wildmenu
 set showmatch
@@ -89,14 +93,14 @@ set incsearch
 
 
 
-
-
-
-
+"Remaping keys
+:imap aa <C-n>
+:imap qq <esc>
+:vmap qq <esc>
 
 
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 
 
