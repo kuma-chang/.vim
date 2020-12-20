@@ -25,9 +25,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" Plugin for YouClompleteMe
-Plugin 'Valloric/YouCompleteMe'
-
 " Plugin for vim-powerline
 Plugin 'Lokaltog/vim-powerline'
 
@@ -40,7 +37,8 @@ Plugin 'jiangmiao/auto-pairs'
 " Plugin for Solarized 8
 Plugin 'lifepillar/vim-solarized8'
 
-
+" Plugin for vim-gitgutter
+Plugin 'airblade/vim-gitgutter'
 
 
 " All of your Plugins must be added before the following line
@@ -59,15 +57,13 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-
-set ai
-
-set t_Co=16
-
 "settings for powerline
 set nocompatible
 set laststatus=2
-set encoding=utf-8
+
+set ai								" Auto indenting
+set t_Co=16						" Color setting for solorized
+set encoding=utf-8		" Use an encoding that supports unicode
 
 
 " Colors
@@ -75,28 +71,33 @@ syntax enable
 
 
 " tab and spaces
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
+set expandtab
+set smarttab
 
 
 "UI Config
-set number
-set showcmd
+set number						" Show line numbers
+set showcmd						" Show (partial) command in status line
 set cursorline
 set cursorcolumn
 filetype indent on
 set wildmenu
-set showmatch
+set showmatch					" Show matching brackets.
 
 "Searching
-set incsearch
+set incsearch					" Allow incremental search 
+set hlsearch          " Highlight search results
+set ignorecase				" Ignore case when searching
+set smartcase					" Automatically switch search to case-sensitive when search query contains an uppercase letter
 
+"Interface
+set mouse=a           " Enable mouse support
 
 
 "Remaping keys
-:imap aa <C-n>
-:imap qq <esc>
-:vmap qq <esc>
+nmap tt :NERDTreeToggle<CR>
 
 
 set background=dark
