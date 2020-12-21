@@ -40,6 +40,8 @@ Plugin 'lifepillar/vim-solarized8'
 " Plugin for vim-gitgutter
 Plugin 'airblade/vim-gitgutter'
 
+" Plugin for NERD commenter
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,7 +58,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 "settings for powerline
 set nocompatible
 set laststatus=2
@@ -65,17 +66,14 @@ set ai								" Auto indenting
 set t_Co=16						" Color setting for solorized
 set encoding=utf-8		" Use an encoding that supports unicode
 
-
 " Colors
 syntax enable
-
 
 " tab and spaces
 set tabstop=2
 set softtabstop=2
 set expandtab
 set smarttab
-
 
 "UI Config
 set number						" Show line numbers
@@ -99,6 +97,8 @@ set mouse=a           " Enable mouse support
 "Remaping keys
 nmap tt :NERDTreeToggle<CR>
 
+"Enabling backspace
+set backspace=indent,eol,start
 
 set background=dark
 colorscheme solarized8
