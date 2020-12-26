@@ -43,6 +43,10 @@ Plugin 'airblade/vim-gitgutter'
 " Plugin for NERD commenter
 Plugin 'scrooloose/nerdcommenter'
 
+" Plugin for Vim Markdown Preview
+Plugin 'JamshedVesuna/vim-markdown-preview'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,9 +62,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"settings for powerline
+" Settings for powerline
 set nocompatible
 set laststatus=2
+
+" Setting for vim-markdown-preview
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
+let vim_markdown_preview_toggle=2
+
 
 set ai								" Auto indenting
 set t_Co=16						" Color setting for solorized
@@ -83,16 +93,13 @@ set cursorcolumn
 filetype indent on
 set wildmenu
 set showmatch					" Show matching brackets.
+set mouse=a           " Enable mouse for scrolling and resizing.
 
 "Searching
 set incsearch					" Allow incremental search 
 set hlsearch          " Highlight search results
 set ignorecase				" Ignore case when searching
 set smartcase					" Automatically switch search to case-sensitive when search query contains an uppercase letter
-
-"Interface
-set mouse=a           " Enable mouse support
-
 
 "Remaping keys
 nmap tt :NERDTreeToggle<CR>
@@ -102,20 +109,4 @@ set backspace=indent,eol,start
 
 set background=dark
 colorscheme solarized8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
