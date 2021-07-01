@@ -41,13 +41,11 @@ Plugin 'lifepillar/vim-solarized8'
 Plugin 'airblade/vim-gitgutter'
 
 " Plugin for NERD commenter
-Plugin 'scrooloose/nerdcommenter'
+" Plugin 'scrooloose/nerdcommenter'
 
 " Plugin for Vim Markdown Preview
-Plugin 'JamshedVesuna/vim-markdown-preview'
+" Plugin 'JamshedVesuna/vim-markdown-preview'
 
-" Plugin for tabnine-vim
-Plugin 'codota/tabnine-vim'
 
 
 " All of your Plugins must be added before the following line
@@ -75,7 +73,7 @@ let vim_markdown_preview_browser='Google Chrome'
 let vim_markdown_preview_toggle=2
 
 
-set ai								" Auto indenting
+set ai					" Auto indenting
 set encoding=utf-8		" Use an encoding that supports unicode
 
 " Colors
@@ -89,20 +87,20 @@ set expandtab
 set smarttab
 
 "UI Config
-set number						" Show line numbers
-set showcmd						" Show (partial) command in status line
+set number			  " Show line numbers
+set showcmd			  " Show (partial) command in status line
 set cursorline
 set cursorcolumn
 filetype indent on
 set wildmenu
-set showmatch					" Show matching brackets.
+set showmatch		  " Show matching brackets.
 set mouse=a           " Enable mouse for scrolling and resizing.
 
 "Searching
-set incsearch					" Allow incremental search 
+set incsearch		  " Allow incremental search 
 set hlsearch          " Highlight search results
-set ignorecase				" Ignore case when searching
-set smartcase					" Automatically switch search to case-sensitive when search query contains an uppercase letter
+set ignorecase		  " Ignore case when searching
+set smartcase		  " Automatically switch search to case-sensitive when search query contains an uppercase letter
 
 "Remaping keys
 nmap tt :NERDTreeToggle<CR>
