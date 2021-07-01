@@ -84,8 +84,9 @@ set encoding=utf-8		" Use an encoding that supports unicode
 syntax enable
 
 " tab and spaces
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
 set expandtab
 set smarttab
 
