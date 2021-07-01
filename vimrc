@@ -50,7 +50,6 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'codota/tabnine-vim'
 
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -77,7 +76,6 @@ let vim_markdown_preview_toggle=2
 
 
 set ai								" Auto indenting
-set t_Co=16						" Color setting for solorized
 set encoding=utf-8		" Use an encoding that supports unicode
 
 " Colors
@@ -112,6 +110,6 @@ nmap tt :NERDTreeToggle<CR>
 "Enabling backspace
 set backspace=indent,eol,start
 
-set background=dark
-colorscheme solarized8
 
+set background=dark
+autocmd vimenter * ++nested colorscheme solarized8
